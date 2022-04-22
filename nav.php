@@ -6,7 +6,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="list.php">Home</a>
+            <a class="nav-link active" aria-current="page" href="list.php">Tarefas</a>
+            <a class="nav-link active" aria-current="page" href="listCategorias.php">Categorias</a>
             <a class="nav-link" href="createTarefa.php">Inserir</a>
             <a class="nav-link" href="createCategoria.php">Inserir categoria</a>
             <a class="nav-link" href="pagina2.php">Pagina 2</a>
