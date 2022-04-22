@@ -20,6 +20,6 @@ if (isset($titulo) && isset($descricao) && isset($nivel)) {
     mysqli_query($connection, $sql);
 }
 
-header("Location: list.php");
+header("Location: listCategorias.php");
 
 ?>

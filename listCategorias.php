@@ -7,7 +7,7 @@ $sql = 'SELECT * FROM categorias';
 
 $result = mysqli_query($connection, $sql);
 
-$tarefas = $result->fetch_all(MYSQLI_ASSOC);
+$categorias = $result->fetch_all(MYSQLI_ASSOC);
 
 ?>
 
@@ -39,14 +39,14 @@ $tarefas = $result->fetch_all(MYSQLI_ASSOC);
             </tr>
         </thead>
         <tbody>
-            <?php foreach($tarefas as $tarefa): ?>
+            <?php foreach($categorias as $categoria): ?>
             <tr>
-                <th scope="row"><?php echo $tarefa["id"]; ?></th>
-                <td><?php echo $tarefa["titulo"]; ?></td>
-                <td><?php echo $tarefa["descricao"]; ?></td>
-                <td><?php echo $tarefa["nivel"]; ?></td>
-                <td><a href="edit.php?id=<?php echo $tarefa['id']; ?>">Editar</a></td>
-                <td><a href="deleteToDo.php?id=<?php echo $tarefa['id']; ?>">Excluir</a></td>
+                <th scope="row"><?php echo $categoria["id"]; ?></th>
+                <td><?php echo $categoria["titulo"]; ?></td>
+                <td><?php echo $categoria["descricao"]; ?></td>
+                <td><?php echo $categoria["nivel"]; ?></td>
+                <td><a href="editCategoria.php?id=<?php echo $categoria['id']; ?>">Editar</a></td>
+                <td><a href="deleteCategoriaToDo.php?id=<?php echo $categoria['id']; ?>">Excluir</a></td>
             </tr>
             <?php endforeach; ?>   
 
